@@ -13,7 +13,7 @@ import "./App.css";
 function App() {
     return (
         <ThemeProvider>
-            <Router basename="/Fjell-Kino">
+            <Router basename="/Fjell-Kino/">
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
