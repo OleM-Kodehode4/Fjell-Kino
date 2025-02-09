@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://OleM-Kodehode4.github.io/fjell-kino",
+  "homepage": "https://OleM-Kodehode4.github.io/Fjell-Kino",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
