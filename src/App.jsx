@@ -8,15 +8,13 @@ import UpcomingMovies from "./pages/UpcomingMovies";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Booking from "./pages/Booking";
-import AccessibilityMenu from "./components/AccessibilityMenu";
 import "./App.css";
 
 function App() {
     return (
         <ThemeProvider>
-            <Router>
+            <Router basename="/fjell-kino/">
                 <Navbar />
-                <AccessibilityMenu />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/movies" element={<Movies />} />

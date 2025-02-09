@@ -7,7 +7,7 @@ function Navbar() {
         <nav className={styles.navbar}>
                 <div className={styles.logo}>
                     <Link to="/">
-                        <img src="/images/logo.webp" alt="Fjell Kino Logo" />
+                        <img src="./images/logo.webp" alt="Fjell Kino Logo" />
                     </Link>
                 </div>
 
