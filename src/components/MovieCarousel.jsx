@@ -1,3 +1,4 @@
+import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -12,13 +13,13 @@ function MovieCarousel() {
             <h2>Kinoaktuelle Filmer</h2>
             <Swiper
                 modules={[Navigation, Pagination]}
-                navigation = {{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
-                pagination={{ el: '.swiper-pagination', clickable: true, dynamicBullets: true }}
+                navigation
+                pagination={{ clickable: true, dynamicBullets: true }}
                 spaceBetween={20}
                 slidesPerView={3}
                 slidesPerGroup={3}
                 loop={true}
-                loopfillgroupwithblank="true"
+                loopFillGroupWithBlank={true}
                 breakpoints={{
                     320: { slidesPerView: 1, slidesPerGroup: 1 },
                     768: { slidesPerView: 2, slidesPerGroup: 2 },
@@ -28,8 +29,8 @@ function MovieCarousel() {
                 {movies.map((movie, index) => (
                     <SwiperSlide key={index}>
                         <div className={styles.movieCard}>
-                        <img src={movie.image} alt={movie.title} className={styles.movieImage} />
-                        <h3>{movie.title}</h3>
+                            <img src={movie.image} alt={movie.title} className={styles.movieImage} />
+                            <h3>{movie.title}</h3>
                             <p>Visningstider: {movie.times.join(", ")}</p>
                             <p>Hall: {movie.hall}</p>
                         </div>
