@@ -20,9 +20,9 @@ function MovieCarousel() {
                 loop={true}
                 loopfillgroupwithblank="true"
                 breakpoints={{
-                    320: { slidesPerView: 1 },
-                    768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
+                    320: { slidesPerView: 1, slidesPerGroup: 1 },
+                    768: { slidesPerView: 2, slidesPerGroup: 2 },
+                    1024: { slidesPerView: 3, slidesPerGroup: 3 },
                 }}
             >
                 {movies.map((movie, index) => (
