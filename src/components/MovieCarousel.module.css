@@ -1,3 +1,24 @@
+:root {
+  --swiper-theme-color: orange;
+  --swiper-bullet-inactive-color: white;
+}
+
+.color-blind {
+  --swiper-theme-color: blue;
+  --swiper-bullet-inactive-color: lightgray;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.5;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--swiper-theme-color) !important;
+  opacity: 1;
+}
+
 .carouselContainer {
   text-align: center;
   padding: 20px;
